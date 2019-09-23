@@ -1,0 +1,49 @@
+/* @import url('style.css'); */
+
+h1 {
+    color: red;
+} 
+
+.box {
+    color: white;
+}
+
+span.box {
+    color: purple;
+}
+
+.right  {
+    display: block;
+    text-align: right;
+}
+
+.box, .right {
+    /* Свойства просоедянятся и к боксам и к райгтам */
+}
+
+#green {
+    background: green;
+    text-align: center;
+}
+
+[privet="ok"]{
+    color: hotpink;
+}
+
+/*
+* {
+    color: salmon;
+}
+*/
+
+.someBg {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    background-image: url('fb.png');
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    /* background-repeat: repeat-x;
+    background-repeat: repeat-y; */
+    background-position: 100px 100px;
+}
