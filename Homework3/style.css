@@ -1,0 +1,52 @@
+.calendar {
+    background: peru url('autumn.jpeg');
+    height: 500px;
+    width: 500px;
+
+    background-size: cover;
+}
+
+.nameM {
+    background: wheat;
+    text-align: center;
+    font-size: 25px;
+    color: #7b1414;
+}
+
+.nameM2{
+    padding: 10px;
+    background: rgb(223, 192, 135);
+    text-align: center;
+    font-size: 25px;
+    color: #7b1414;
+
+}
+.nameM3{
+    padding: 15px;
+    background: rgb(223, 192, 135);
+    text-align: center;
+    font-size: 25px;
+    color: #7b1414;
+
+}
+.calendarWeek {
+    margin: 20px;
+    padding: 10px 0;
+    background-color: #ddd;
+    display: inline;
+}
+
+.div {
+    display: inline;
+}
+
+.day {
+    margin:5px;
+    padding: 10px;
+    display: inline;
+    font-size: 20px;
+    border: 2px solid black;
+    
+}
+
+ 
