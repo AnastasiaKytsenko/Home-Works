@@ -1,0 +1,38 @@
+.clearfix {
+    clear: both;
+}
+
+.calendar {
+    width: 700px;
+    background: url('autumn.jpeg');
+}
+
+.calendar-title {
+    background: wheat;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    color: brown;
+}
+
+.calendar-week-item {
+    float: left;
+    width: 100px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.calendar-days .day {
+    float: left;
+    text-align: center;
+    padding: 15px 0;
+    width: 100px;
+}
+
+.calendar-days .day.wday {
+    color: red;
+}
+
+.calendar-days .day.current {
+    color: white;
+}
