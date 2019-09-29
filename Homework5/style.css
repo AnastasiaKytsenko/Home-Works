@@ -1,0 +1,89 @@
+.picture {
+    background: url('nnnature.jpg');
+    position: relative;
+    margin: 0 auto;
+    height: 900px;
+    width: 1100px;
+}
+
+.deer {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    bottom: 320px;
+    right: 400px;
+}
+
+.cloud {
+    position: absolute;
+    height: 70px;
+    width: 120px;
+    top: 120px;
+    left: 100px;
+}
+
+.tower {
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    top: 380px;
+    right: 90px;
+}
+
+.gnom {
+    position: absolute;
+    height: 180px;
+    width: 80px;
+    top: 500px;
+    right: 70px;
+}
+
+.cow {
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    bottom: 30px;
+    right: 130px;
+}
+
+.flowers {
+    position: absolute;
+    height: 50px;
+    width: 100px;
+    bottom: 220px;
+    right: 350px;
+}
+
+.wood {
+    position: absolute;
+    height: 50px;
+    width: 100px;
+    bottom: 280px;
+    right: 550px;
+}
+
+.sun {
+    position: absolute;
+    height: 150px;
+    width: 200px;
+    top: 10px;
+    right: 50px;
+}
+
+.tree {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    bottom: 450px;
+    left: 0px;
+}
+
+.snail {
+    position: absolute;
+    height: 70px;
+    width: 150px;
+    bottom: 70px;
+    left: 200px;
+}
+
+
