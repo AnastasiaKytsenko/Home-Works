@@ -1,0 +1,13 @@
+.myTable {
+    width: 100%;
+    border-collapse: collapse; /* Отключает пространство между ячейками */
+}
+
+.myTable tbody td {
+    padding: 10px;
+}
+
+.table-wrapper {
+    overflow: auto;
+    margin-bottom: 40px;
+}

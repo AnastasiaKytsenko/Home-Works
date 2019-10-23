@@ -1,0 +1,164 @@
+/* 
+    ссылки е наследуют цвет и подчеркивания от родителя
+*/
+
+a:link {
+    color: green;
+    text-decoration: none;
+}
+
+a:visited {
+    color: darkcyan;
+}
+
+a:hover {
+    color: darkmagenta;
+}
+
+a:active {
+    color: yellow;
+}
+
+a.ssylka {
+    font-size: 20px;
+    color: black;
+}
+
+/*
+    Псевдокласс - это доп. классы, которые по умолчанию  имеют теги. Обычно они используются для изменения состояния или события
+    :link - псевлокласс, отвечающий за дизайн ссылки в обычном состоянии
+    :hover - отвечает за дизайн при наведение
+    :active - отвечает за дизайн при нажатии на ссылку, когда клавиша зажата, но не отпущена
+    :visited - отвечает за дизайн при посещении ссылки
+*/
+
+
+/* Текстовые свойства */
+
+#razdel1{
+    word-spacing: 5px;
+    /* 
+        Задает интервал между словами
+        Принимает px\em\%
+    */
+
+    letter-spacing: 3px;
+    /* 
+        Задает расстояние между буквами в слове
+        Принимает em\px
+    */
+
+    text-indent: 30px;
+    /*
+        Отступ в начале абзаца
+        Принимает px\% от ширины родителя \ em 
+    */
+
+    /* Работа с шрифтами */
+
+    font-family: Arial, Helvetica, sans-serif;
+    /*
+        Семейства:
+        serif - шрифты с засечками
+        sans-serif - рубленые шрифты
+        monospace - моноширенные шрифты
+        cursive - рукописные шрифты
+    */
+
+    font-weight: 900;
+    /*
+        100-900
+    */
+
+    font-style: italic;
+    /* курсив */
+
+    font-size: 20px;
+    /*
+        Поддерживает px\em\rem\%
+
+        smaller - сделает шрифт на порядок меньше от родителя (обычно этим не пользуются)
+    */
+
+    font: 700 italik 24px/28px 'Calibri', sans-serif;
+    /*
+        font-weight font-style font-size/line-height font-family
+    */
+
+    line-height: 1.5;
+    /*
+        Принимает px\%\ и относительные единицы 1=100% шрифта
+    */
+
+
+}
+
+.gradient-l {
+    height: 300px;
+    width: 400px;
+
+    background-image: linear-gradient(45deg, red, blue);
+
+    /*
+        Можно задавать вместо градусов to top \ to right \ to bottom \ to left
+        to top left \ to top right \ 
+    */
+}
+
+.gradient-l2 {
+    height: 300px;
+    width: 400px;
+
+    background-image: linear-gradient(45deg, red 20%, blue 50%, green 80%);
+}
+
+.gradient-l3 {
+    height: 300px;
+    width: 400px;
+
+    background-image: linear-gradient(to right, red 20%, blue 20%, blue 80%, purple 80%);
+}
+
+.gradient-r {
+    height: 300px;
+    width: 400px;
+
+    background: radial-gradient(red, blue);
+
+    /*
+        at top - координаты 0 50%
+        at 40px 50px - начальная точка градиента
+        100px 100px - 
+    */
+
+    background: radial-gradient(at top, red, blue); 
+
+    background: radial-gradient(100px 100px at 40px 50px, red, blue);
+
+    /*
+        closest-side - стремится к ближайшей стороне
+        farthest-side - стремится к дальней стороне
+
+        closest-corner - ближайший угол
+        farthest-corner - дальний угол
+    */
+
+    background: radial-gradient(circle farthest-corner at 100px 50px, red, blue); 
+
+}
+
+.gradient-lr {
+    height: 300px;
+    width: 400px;
+
+    background: repeating-linear-gradient(45deg, red, red 10px, blue 10px, blue 20px);
+}
+
+.gradient-rr {
+    height: 300px;
+    width: 400px;
+
+    background: repeating-radial-gradient(circle, red, red 10px, blue 10px, blue 20px);
+}
+
+

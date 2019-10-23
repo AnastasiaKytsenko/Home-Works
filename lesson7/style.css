@@ -1,0 +1,67 @@
+.clear {
+    clear: both;
+}
+
+.menu.innermenu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.innermenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.menu {
+    background: black;
+    padding: 0 20px;
+}
+
+.menu li {
+    float: left;
+    padding: 0 20x;
+    position: relative;
+}
+
+.menu li a {
+    color: wheat;
+    text-decoration: none;
+}
+
+.menu li:hover.innermenu {
+    display: block;
+    position: absolute;
+    background: red; 
+}
+
+.menu .innermenu li {
+    float: none;
+}
+
+.list {
+    list-style-type: square;
+
+    /*
+        square - квадратный маркур
+        disc - по умолчанию
+        none - отключить стили
+        decimal - цыфровая нумерация
+    */
+
+    list-style-image: linear-gradient(red 0, red 50%, blue 100%);
+
+    /* 
+        Позволяет задать маркер изображения
+    */
+
+    list-style-position: inside;
+
+    /* 
+        Позиционирование маркера за пределами li(outside) либо в пределах li(inside)
+    */
+
+    list-style: circle outside;
+}

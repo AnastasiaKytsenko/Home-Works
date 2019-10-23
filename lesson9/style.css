@@ -1,0 +1,136 @@
+.products {
+    width: 100%;
+    border-collapse: collapse; /* Отключает пространство между ячейками */
+}
+
+.products tbody td {
+    padding: 10px;
+}
+
+.table-wrapper {
+    overflow: auto;
+    margin-bottom: 40px;
+}
+
+.border {
+    height: 200px;
+    border: 3px solid blue;
+
+    border-style: dotted;
+
+    /*
+        dotted - точки
+        dashed - полоски прерывающиеся
+        solid - сплошная заливка
+        double - двойная линия
+        groove - заливка с тенью или с теснением
+    */
+
+    border-style: dotted dashed solid double;
+
+    border-color: red;
+    border-color: red blue purple salmon;
+
+    border-width: 5px;
+    border-width: 5px 10px 20px 30px;
+    
+    border-right: 10px solid black;
+    /*
+        border-left
+        border-bottom
+        border-top
+    */
+
+    border-bottom: 0;
+
+    border-radius: 15px;
+
+    border-radius: 10px 20px 30px 40px;
+    /* начинается с левого верхнего угла по часовой стрелке */
+
+    border-radius: 50%;
+
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(200, 50, 50, 0.79);
+    -moz-box-shadow:    7px 7px 5px 0px rgba(200, 50, 50, 0.79);
+    box-shadow:         7px 7px 5px 0px rgba(200, 50, 50, 0.79);
+
+    /*
+        смещение по ширине, смещение по высоте, радиус рызмытия, растяжение, цвет
+
+        есть вариант записи сразу 2 теней, но одна из них должна быть inset (внутренняя)
+        box-shadow: inset 7px 7px 5px 0px rgba(200, 50, 50, 0.79), 7px 7px 5px 0px rgba(200, 50, 50, 0.79);
+    */
+}
+
+
+
+.border2 {
+    height: 200px;
+    width: 300px; /* Приоритет 1 */
+
+    max-width: 200px; /* Приоритет 2 */
+    min-width: 400px; /* Приоритет 3 */
+
+    font-size: 30px;
+    text-align: center;
+
+    border: 5px solid; /* по умолчанию черный цвет */
+
+    border-radius: 20px/40px;
+
+    /*
+        border-top-left-radius - угол верхний левый 
+    */
+
+    text-shadow: 4px 4px 0px rgba(255, 150, 150, 1);
+
+}
+
+.width-height {
+    background: red;
+
+    min-height: 100px;
+    max-height: 200px;
+
+    max-width: 700px;
+    min-width: 400px;
+
+    /*overflow: hidden;*/
+}
+
+/* Псевдоэлементы */
+
+.width-height::first-letter {
+    /* Выберет каждую 1 букву каждого абзаца И ПРИМЕНЯЕТСЯ ТОЛЬКО К БЛОЧНЫМ ЭЛЕМЕНТАМ */
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.width-height::first-line {
+    text-decoration: underline;
+
+    /*
+        ВЫДЕЛИТ ПЕРВУЮ СТРОКУ ТЕКСТА И ПРИМЕНЯЕТСЯ ТОЛЬКО К БЛОЧНЫМ ЭЛЕМЕНТАМ
+    */
+}
+
+.width-height::before {
+    content: 'ПРИВЕТ'; /* Это свойство контент является обязательным, без него before не будет работать */
+}
+
+.width-height::after {
+    content: 'ПОКА'; /* Это свойство контент является обязательным, без него before не будет работать */
+}
+/*
+    ПСЕВДОЭЛЕМЕНТ before ДОБАВИТ КОНТЕНТ В НАЧАЛЕ ЭЛЕМЕНТА ДО ВСЕГО ЧТО ВНУТРИ, А after ПОСЛЕ ВСЕГО
+*/
+
+/*
+    color: transparent; Прозрачный цвет или безцветный 
+*/
+
+/*
+    vertical-align - выравнивание по вертикали текста
+    работает в ячейке таблицы для выравнивания текста к верху top \ к низу bottom \ центрирует middle
+*/
