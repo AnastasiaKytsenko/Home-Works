@@ -1,0 +1,27 @@
+$color: red;
+$color: blue;
+
+h1 {
+    color: $color;
+}
+
+.title {
+    color: $color;
+}
+
+.link {
+    color: $color;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    .link {
+        color: purple;
+        span {
+            b {
+                
+            }
+        }
+    }
+}
